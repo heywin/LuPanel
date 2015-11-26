@@ -1,0 +1,24 @@
+{
+  "name": "lupanel",
+  "version": "0.0.1",
+  "description": "A shadowsocks manyuser panel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heywin/LuPanel.git"
+  },
+  "keywords": [
+    "shadowsocks",
+    "manyuser",
+    "panel"
+  ],
+  "author": "heywin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heywin/LuPanel/issues"
+  },
+  "homepage": "https://github.com/heywin/LuPanel#readme"
+}
