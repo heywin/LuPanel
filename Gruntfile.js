@@ -2,6 +2,21 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+		htmlbuild: {
+			dist: {
+				src: 'dev/*.html',
+				dest: 'dist/',
+				options: {
+					beautify: true,
+					sections: {
+						layout: {
+							header: 'dev/includes/header.html',
+                        	footer: 'dev/includes/footer.html'
+						}
+					}
+				}
+			}
+		},
 		connect: {
 			server: {
 				options: {
@@ -39,7 +54,8 @@ module.exports = function(grunt) {
 				}
 			},
 			html: {
-				files: ['dist/*.html'],
+				files: ['dev/*.html', 'dev/includes/*.html'],
+				tasks: ['htmlbuild:dist'],
 				options: {
 					livereload: true
 				}
@@ -50,6 +66,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-html-build');
 
 	grunt.registerTask('default', ['connect', 'watch']);
 }
