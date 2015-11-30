@@ -1,0 +1,108 @@
+<!-- build:section layout.admin_header --><!-- /build -->
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">添加试用套餐</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>套餐名称</label>
+                                            <input class="form-control" placeholder="试用套餐">
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label>套餐描述</label>
+                                            <textarea class="form-control" rows="5" placeholder="套餐内容描述, 支持HTML格式."></textarea>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label>节点选择</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">北京BGP1
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">北京BGP2
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">北京BGP3
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label>套餐流量</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="300">
+                                                <span class="input-group-addon">MB</span>
+                                            </div>
+                                            <p class="help-block">注册账号后未订购过其他套餐的用户才可选购一次试用套餐. 试用结束后用户状态变为"过期".</p>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label>有效期</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="3">
+                                                <span class="input-group-addon">天</span>
+                                            </div>
+                                            <p class="help-block">注册账号后未订购过其他套餐的用户才可选购一次试用套餐. 试用结束后用户状态变为"过期".</p>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label>试用套餐价格</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-rmb"></i></span>
+                                                <input type="text" class="form-control" placeholder="0.01">
+                                            </div>
+                                            <p class="help-block">设置为0则为免费.</p>
+                                        </div>
+                                        <hr>
+                                        <div class="form-group">
+                                            <label>状态修改</label>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio" name="nodeStatus" id="nodeStatus1" value="option1" checked>正常
+                                                </label>
+                                            </div>
+                                            <div class="radio-inline">
+                                                <label>
+                                                    <input type="radio" name="nodeStatus" id="nodeStatus2" value="option2">禁用
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <button type="submit" class="btn btn-danger">保存</button>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-12 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+<!-- build:section layout.admin_footer --><!-- /build -->

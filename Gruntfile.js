@@ -10,8 +10,10 @@ module.exports = function(grunt) {
 					beautify: true,
 					sections: {
 						layout: {
-							header: 'dev/includes/header.html',
-                        	footer: 'dev/includes/footer.html'
+							admin_header: 'dev/includes/admin_header.html',
+                        	admin_footer: 'dev/includes/admin_footer.html',
+                        	user_header: 'dev/includes/user_header.html',
+                        	user_footer: 'dev/includes/user_footer.html'
 						}
 					}
 				}
